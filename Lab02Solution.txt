@@ -1,0 +1,33 @@
+/***********************************************************************
+* Name:  David L. Colon
+* AccessID: ef9600
+* Assignment:  Lab 02
+* Date: 09/20/2024
+*-----------------------------------------------------------------------
+This program prompts user for the nummber of times a message should be
+printed on screen.  It only takes numbers from 1 to 10, and does NOT
+accept letters, punctuation, etc.
+************************************************************************/
+
+#include <stdio.h>
+
+//declarations
+int number;	// the # of times user wants to print message
+
+int main () {
+	//prompt user for input
+	printf("Enter a number between 1 and 10: ");
+	
+	while (scanf("%d", &number) != 1 {
+		//not a number
+		printf("No letter, punctation, etc..ONLY 0 to 9\n");
+		printf("Enter a number between 1 and 10: ");
+	}
+	else {
+		if (number >=1 && number <= 10) {
+		
+		//print message 
+		for (int i = 1; i<= number; i++) {
+			printf("Loop Message %d\n", i);
+		}
+	}
